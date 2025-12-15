@@ -48,4 +48,14 @@ Thumbs.db
 htmlcov/
 
 # Config (if contains sensitive data)
+
+# Node.js / Web GUI
+node_modules/
+.next/
+out/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm
+.eslintcache
 config/settings.json

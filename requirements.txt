@@ -5,3 +5,10 @@ soundfile
 numpy
 pvporcupine
 pytest
+requests
+beautifulsoup4
+pillow
+pyautogui
+keyboard
+pyperclip
+pystray

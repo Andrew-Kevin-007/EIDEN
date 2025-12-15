@@ -1,0 +1,58 @@
+{
+    "version": "2.1.0",
+    "assistant": {
+        "name": "JARVIS",
+        "wake_words": [
+            "hey assistant",
+            "jarvis"
+        ],
+        "voice_rate": 200,
+        "voice_volume": 1.0,
+        "verbose": false
+    },
+    "llm": {
+        "model": "llama3.2:3b",
+        "host": "http://localhost:11434",
+        "temperature": 0.3,
+        "timeout": 10,
+        "intent_timeout": 5,
+        "max_tokens": 100
+    },
+    "audio": {
+        "sample_rate": 16000,
+        "channels": 1,
+        "wake_word_duration": 2,
+        "command_duration": 4
+    },
+    "features": {
+        "voice_auth": true,
+        "app_discovery": true,
+        "email": false,
+        "weather": true,
+        "web_search": true,
+        "calculator": true,
+        "timer": true,
+        "media_control": true
+    },
+    "startup": {
+        "auto_start": false,
+        "minimize_to_tray": false,
+        "show_notifications": true
+    },
+    "logging": {
+        "enabled": true,
+        "level": "INFO",
+        "max_size_mb": 10,
+        "backup_count": 5
+    },
+    "performance": {
+        "enable_cache": true,
+        "cache_size": 100,
+        "enable_fast_commands": true,
+        "enable_timing": false
+    },
+    "security": {
+        "require_auth_for_system": true,
+        "session_timeout_minutes": 60
+    }
+}
